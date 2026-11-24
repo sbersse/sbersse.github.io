@@ -1,0 +1,1613 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>overflow樱花动漫 - 品牌官网 | 高清原创动漫视频社区</title>
+<meta name="description" content="overflow樱花动漫官方网站，专注高清原创动漫视频内容，汇聚优质创作者与正版番剧，打造值得信赖的动漫内容生态与社区平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff5c8a'/%3E%3Cstop offset='1' stop-color='%236b5bff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23121320'/%3E%3Cpath d='M32 10c9 0 16 7 16 16 0 5-2 9-6 12 3 5 4 10 2 14-5-1-9-4-12-8-2 1-4 1-6 0-3 4-7 7-12 8-2-4-1-9 2-14-4-3-6-7-6-12 0-9 7-16 16-16z' fill='url(%23g)'/%3E%3Ccircle cx='25' cy='27' r='3' fill='%23fff'/%3E%3Ccircle cx='39' cy='27' r='3' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ovf-bg:#0d0e1a;
+  --ovf-bg-2:#141627;
+  --ovf-bg-3:#1b1e33;
+  --ovf-card:#181b2e;
+  --ovf-line:rgba(255,255,255,.09);
+  --ovf-txt:#eceef7;
+  --ovf-txt-2:#a7acc7;
+  --ovf-txt-3:#7c81a0;
+  --ovf-pink:#ff5c8a;
+  --ovf-pink-soft:rgba(255,92,138,.14);
+  --ovf-cyan:#3ff0d8;
+  --ovf-cyan-soft:rgba(63,240,216,.12);
+  --ovf-violet:#8f7bff;
+  --ovf-violet-soft:rgba(143,123,255,.14);
+  --ovf-radius:18px;
+  --ovf-radius-s:12px;
+  --ovf-head-h:64px;
+  --ovf-ann-h:42px;
+  --ovf-sticky:calc(var(--ovf-head-h) + var(--ovf-ann-h));
+  --ovf-shadow:0 18px 44px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ovf-bg);
+  color:var(--ovf-txt);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul,ol{list-style:none}
+.ovf-container{width:min(1180px,92vw);margin-inline:auto}
+.ovf-section{padding:72px 0}
+.ovf-section--tight{padding:52px 0}
+.ovf-anchor{scroll-margin-top:calc(var(--ovf-sticky) + 18px)}
+[id]{scroll-margin-top:calc(var(--ovf-sticky) + 18px)}
+
+/* ===== 公告条 + 页头 吸顶 ===== */
+.ovf-topbar{
+  position:sticky;top:0;z-index:120;
+  background:rgba(13,14,26,.92);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--ovf-line);
+}
+.ovf-announce{
+  height:var(--ovf-ann-h);
+  display:flex;align-items:center;
+  background:linear-gradient(90deg,rgba(255,92,138,.18),rgba(143,123,255,.16) 50%,rgba(63,240,216,.14));
+  border-bottom:1px solid var(--ovf-line);
+  font-size:.84rem;
+  overflow:hidden;
+}
+.ovf-announce-inner{width:min(1180px,92vw);margin-inline:auto;display:flex;align-items:center;gap:14px;min-width:0}
+.ovf-announce-tag{
+  flex:none;display:inline-flex;align-items:center;gap:6px;
+  background:var(--ovf-pink);color:#1a0a12;font-weight:700;
+  font-size:.72rem;letter-spacing:.08em;padding:3px 9px;border-radius:999px;
+}
+.ovf-announce-track{display:flex;align-items:center;gap:30px;overflow:hidden;white-space:nowrap;flex:1;min-width:0}
+.ovf-announce-item{color:var(--ovf-txt-2);display:inline-flex;align-items:center;gap:8px;flex:none}
+.ovf-announce-item b{color:var(--ovf-cyan);font-weight:600}
+.ovf-announce-more{flex:none;color:var(--ovf-pink);font-size:.8rem;font-weight:600}
+
+.ovf-header{
+  height:var(--ovf-head-h);
+  display:flex;align-items:center;
+}
+.ovf-header-inner{
+  width:min(1180px,92vw);margin-inline:auto;
+  display:flex;align-items:center;gap:22px;
+}
+.ovf-brand{display:flex;align-items:center;gap:10px;flex:none}
+.ovf-brand-mark{
+  width:38px;height:38px;border-radius:12px;flex:none;
+  background:linear-gradient(135deg,var(--ovf-pink),var(--ovf-violet));
+  display:grid;place-items:center;
+  box-shadow:0 6px 18px rgba(255,92,138,.35);
+}
+.ovf-brand-mark svg{width:22px;height:22px}
+.ovf-brand-name{font-size:1.06rem;font-weight:700;letter-spacing:.02em;line-height:1.2}
+.ovf-brand-name span{display:block;font-size:.66rem;font-weight:400;color:var(--ovf-txt-3);letter-spacing:.16em}
+.ovf-nav{display:flex;align-items:center;gap:4px;margin-left:8px}
+.ovf-nav a{
+  padding:8px 12px;border-radius:9px;font-size:.9rem;color:var(--ovf-txt-2);
+  transition:background .2s,color .2s;white-space:nowrap;
+}
+.ovf-nav a:hover{background:rgba(255,255,255,.06);color:var(--ovf-txt)}
+.ovf-head-tools{margin-left:auto;display:flex;align-items:center;gap:12px}
+.ovf-search{
+  display:flex;align-items:center;gap:8px;
+  background:var(--ovf-bg-3);border:1px solid var(--ovf-line);
+  border-radius:999px;padding:6px 6px 6px 14px;
+  transition:border-color .2s,box-shadow .2s;
+}
+.ovf-search:focus-within{border-color:var(--ovf-pink);box-shadow:0 0 0 3px var(--ovf-pink-soft)}
+.ovf-search input{
+  background:none;border:none;outline:none;color:var(--ovf-txt);
+  font-size:.86rem;width:150px;
+}
+.ovf-search input::placeholder{color:var(--ovf-txt-3)}
+.ovf-search-btn{
+  background:linear-gradient(135deg,var(--ovf-pink),var(--ovf-violet));
+  color:#fff;font-size:.8rem;font-weight:600;border-radius:999px;
+  padding:6px 14px;transition:filter .2s;
+}
+.ovf-search-btn:hover{filter:brightness(1.12)}
+.ovf-search-tip{
+  font-size:.76rem;color:var(--ovf-cyan);min-height:0;margin-left:6px;
+  opacity:0;transition:opacity .2s;white-space:nowrap;
+}
+.ovf-search-tip.is-on{opacity:1}
+.ovf-burger{
+  display:none;width:40px;height:40px;border-radius:10px;
+  background:var(--ovf-bg-3);border:1px solid var(--ovf-line);
+  place-items:center;
+}
+.ovf-burger span{display:block;width:18px;height:2px;background:var(--ovf-txt);border-radius:2px;transition:transform .25s,opacity .25s}
+.ovf-burger span + span{margin-top:4px}
+.ovf-burger.is-open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.ovf-burger.is-open span:nth-child(2){opacity:0}
+.ovf-burger.is-open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* 移动端抽屉 */
+.ovf-drawer{
+  position:fixed;inset:calc(var(--ovf-sticky) + 0px) 0 auto 0;z-index:110;
+  background:var(--ovf-bg-2);border-bottom:1px solid var(--ovf-line);
+  padding:14px 6vw 22px;
+  transform:translateY(-12px);opacity:0;pointer-events:none;transition:.25s;
+  max-height:calc(100vh - var(--ovf-sticky));overflow:auto;
+}
+.ovf-drawer.is-open{transform:translateY(0);opacity:1;pointer-events:auto}
+.ovf-drawer nav{display:flex;flex-direction:column;gap:2px}
+.ovf-drawer nav a{padding:12px 10px;border-radius:10px;color:var(--ovf-txt-2);font-size:.95rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.ovf-drawer nav a:hover{background:rgba(255,255,255,.05);color:var(--ovf-txt)}
+
+/* ===== 首屏 ===== */
+.ovf-hero{
+  position:relative;padding:64px 0 76px;overflow:hidden;
+  background:
+    radial-gradient(900px 500px at 82% 10%,rgba(143,123,255,.22),transparent 62%),
+    radial-gradient(700px 420px at 8% 90%,rgba(255,92,138,.16),transparent 60%),
+    linear-gradient(180deg,var(--ovf-bg-2),var(--ovf-bg));
+}
+.ovf-hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(circle at 60% 40%,#000 20%,transparent 78%);
+  -webkit-mask-image:radial-gradient(circle at 60% 40%,#000 20%,transparent 78%);
+}
+.ovf-hero-grid{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:52px;align-items:center;
+}
+.ovf-hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.78rem;letter-spacing:.14em;color:var(--ovf-cyan);
+  border:1px solid rgba(63,240,216,.35);border-radius:999px;
+  padding:5px 14px;background:var(--ovf-cyan-soft);margin-bottom:22px;
+}
+.ovf-hero-eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ovf-cyan);box-shadow:0 0 10px var(--ovf-cyan)}
+.ovf-hero h1{
+  font-size:clamp(2.5rem,5.6vw,4.2rem);
+  line-height:1.12;letter-spacing:-.02em;font-weight:800;
+  margin-bottom:8px;
+}
+.ovf-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,var(--ovf-pink),var(--ovf-violet) 46%,var(--ovf-cyan));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.ovf-hero-sub{font-size:1rem;color:var(--ovf-txt-2);letter-spacing:.02em;margin-bottom:20px}
+.ovf-hero-lead{
+  font-size:1rem;color:var(--ovf-txt-2);max-width:52ch;margin-bottom:26px;
+}
+.ovf-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.ovf-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;border-radius:12px;font-size:.92rem;font-weight:600;
+  transition:transform .18s,filter .18s,background .18s;
+}
+.ovf-btn:hover{transform:translateY(-2px)}
+.ovf-btn--primary{background:linear-gradient(135deg,var(--ovf-pink),var(--ovf-violet));color:#fff;box-shadow:0 10px 26px rgba(255,92,138,.32)}
+.ovf-btn--primary:hover{filter:brightness(1.08)}
+.ovf-btn--ghost{border:1px solid var(--ovf-line);background:rgba(255,255,255,.04);color:var(--ovf-txt)}
+.ovf-btn--ghost:hover{background:rgba(255,255,255,.09)}
+.ovf-hero-stats{display:flex;gap:34px;flex-wrap:wrap}
+.ovf-stat b{display:block;font-size:1.55rem;font-weight:800;letter-spacing:-.01em;line-height:1.2;color:var(--ovf-txt)}
+.ovf-stat b i{font-style:normal;font-size:.9rem;color:var(--ovf-pink);margin-left:2px}
+.ovf-stat span{font-size:.78rem;color:var(--ovf-txt-3);letter-spacing:.05em}
+
+/* 首屏主视觉 */
+.ovf-hero-visual{position:relative}
+.ovf-hero-frame{
+  position:relative;border-radius:24px;overflow:hidden;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:var(--ovf-shadow);
+  aspect-ratio:16/12;
+  background:var(--ovf-bg-3);
+}
+.ovf-hero-frame img{width:100%;height:100%;object-fit:cover}
+.ovf-hero-frame-caption{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:38px 20px 16px;
+  background:linear-gradient(180deg,transparent,rgba(8,9,18,.94));
+  display:flex;align-items:center;gap:12px;justify-content:space-between;
+}
+.ovf-hero-frame-caption strong{font-size:.94rem;display:block}
+.ovf-hero-frame-caption small{font-size:.74rem;color:var(--ovf-txt-3)}
+.ovf-play-badge{
+  flex:none;display:inline-flex;align-items:center;gap:6px;
+  background:var(--ovf-pink);color:#fff;font-size:.74rem;font-weight:700;
+  padding:5px 12px;border-radius:999px;
+}
+.ovf-hero-float{
+  position:absolute;right:-14px;top:-20px;
+  background:rgba(24,27,46,.92);border:1px solid var(--ovf-line);
+  backdrop-filter:blur(8px);
+  border-radius:14px;padding:10px 16px;font-size:.76rem;color:var(--ovf-txt-2);
+  box-shadow:0 12px 30px rgba(0,0,0,.4);
+}
+.ovf-hero-float b{color:var(--ovf-cyan);font-size:1rem;display:block;line-height:1.3}
+
+/* ===== 通用区块标题 ===== */
+.ovf-sec-head{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:34px}
+.ovf-sec-head h2{
+  font-size:clamp(1.5rem,2.6vw,2rem);font-weight:800;letter-spacing:-.01em;line-height:1.25;
+}
+.ovf-sec-head h2::before{
+  content:"";display:inline-block;width:8px;height:22px;border-radius:4px;
+  background:linear-gradient(180deg,var(--ovf-pink),var(--ovf-violet));
+  margin-right:12px;vertical-align:-3px;
+}
+.ovf-sec-head p{color:var(--ovf-txt-3);font-size:.88rem;flex:1;min-width:200px}
+.ovf-sec-link{font-size:.84rem;color:var(--ovf-pink);font-weight:600;white-space:nowrap}
+.ovf-sec-link:hover{text-decoration:underline}
+
+/* ===== 焦点内容 ===== */
+.ovf-focus{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px}
+.ovf-focus-main{
+  border-radius:var(--ovf-radius);overflow:hidden;border:1px solid var(--ovf-line);
+  background:var(--ovf-card);transition:transform .25s,border-color .25s;
+}
+.ovf-focus-main:hover{transform:translateY(-4px);border-color:rgba(255,92,138,.4)}
+.ovf-focus-main .ovf-thumb{aspect-ratio:16/9;overflow:hidden;position:relative}
+.ovf-focus-main .ovf-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.ovf-focus-main:hover .ovf-thumb img{transform:scale(1.05)}
+.ovf-focus-main .ovf-thumb::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 45%,rgba(10,11,20,.85));
+}
+.ovf-focus-badge{
+  position:absolute;left:14px;top:14px;z-index:2;
+  background:var(--ovf-pink);color:#fff;font-size:.72rem;font-weight:700;
+  padding:4px 11px;border-radius:999px;letter-spacing:.06em;
+}
+.ovf-focus-body{padding:22px 24px 24px}
+.ovf-focus-body h3{font-size:1.24rem;font-weight:700;margin-bottom:10px;line-height:1.45}
+.ovf-focus-body p{font-size:.9rem;color:var(--ovf-txt-2);margin-bottom:16px}
+.ovf-focus-list{display:flex;flex-direction:column;gap:14px}
+.ovf-focus-item{
+  display:flex;gap:14px;padding:16px;border-radius:var(--ovf-radius-s);
+  background:var(--ovf-card);border:1px solid var(--ovf-line);
+  transition:border-color .2s,background .2s,transform .2s;
+}
+.ovf-focus-item:hover{border-color:rgba(143,123,255,.45);background:var(--ovf-bg-3);transform:translateX(3px)}
+.ovf-focus-item .ovf-num{
+  flex:none;width:36px;height:36px;border-radius:10px;
+  display:grid;place-items:center;font-weight:800;font-size:.95rem;
+  background:var(--ovf-violet-soft);color:var(--ovf-violet);
+}
+.ovf-focus-item h4{font-size:.96rem;font-weight:600;margin-bottom:4px;line-height:1.5}
+.ovf-focus-item small{color:var(--ovf-txt-3);font-size:.78rem}
+
+/* ===== 视频列表 ===== */
+.ovf-video-list{display:flex;flex-direction:column;gap:6px}
+.ovf-video-row{
+  display:grid;grid-template-columns:56px minmax(0,1fr) auto;
+  gap:18px;align-items:center;
+  padding:18px 20px;border-radius:var(--ovf-radius-s);
+  border:1px solid transparent;border-bottom:1px solid var(--ovf-line);
+  transition:background .2s,border-color .2s;
+}
+.ovf-video-row:hover{background:var(--ovf-bg-2);border-color:var(--ovf-line);border-radius:var(--ovf-radius-s)}
+.ovf-video-idx{font-size:1.25rem;font-weight:800;color:var(--ovf-txt-3);font-variant-numeric:tabular-nums}
+.ovf-video-row:hover .ovf-video-idx{color:var(--ovf-pink)}
+.ovf-video-info h3{font-size:1rem;font-weight:600;margin-bottom:5px;line-height:1.5}
+.ovf-video-meta{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:.78rem;color:var(--ovf-txt-3);align-items:center}
+.ovf-video-meta .ovf-tag{
+  color:var(--ovf-cyan);background:var(--ovf-cyan-soft);
+  padding:1px 9px;border-radius:999px;font-size:.72rem;
+}
+.ovf-video-meta .ovf-tag--pink{color:var(--ovf-pink);background:var(--ovf-pink-soft)}
+.ovf-video-ops{display:flex;align-items:center;gap:8px}
+.ovf-icon-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:.78rem;color:var(--ovf-txt-3);
+  padding:6px 10px;border-radius:9px;border:1px solid var(--ovf-line);
+  transition:.2s;white-space:nowrap;
+}
+.ovf-icon-btn:hover{color:var(--ovf-txt);border-color:var(--ovf-txt-3);background:rgba(255,255,255,.04)}
+.ovf-icon-btn.is-liked{color:var(--ovf-pink);border-color:rgba(255,92,138,.5);background:var(--ovf-pink-soft)}
+.ovf-icon-btn.is-saved{color:var(--ovf-cyan);border-color:rgba(63,240,216,.5);background:var(--ovf-cyan-soft)}
+.ovf-icon-btn svg{width:14px;height:14px;flex:none}
+
+/* ===== 专题 ===== */
+.ovf-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.ovf-topic{
+  border-radius:var(--ovf-radius);padding:24px;
+  background:linear-gradient(160deg,var(--ovf-bg-3),var(--ovf-card));
+  border:1px solid var(--ovf-line);
+  display:flex;flex-direction:column;gap:12px;
+  transition:transform .25s,border-color .25s;
+}
+.ovf-topic:hover{transform:translateY(-4px);border-color:rgba(63,240,216,.35)}
+.ovf-topic--accent{background:linear-gradient(160deg,rgba(255,92,138,.16),rgba(143,123,255,.12));border-color:rgba(255,92,138,.28)}
+.ovf-topic-status{
+  display:inline-flex;align-items:center;gap:6px;font-size:.72rem;
+  color:var(--ovf-cyan);align-self:flex-start;
+  border:1px solid rgba(63,240,216,.3);border-radius:999px;padding:2px 10px;
+}
+.ovf-topic-status::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ovf-cyan)}
+.ovf-topic h3{font-size:1.08rem;font-weight:700;line-height:1.4}
+.ovf-topic p{font-size:.84rem;color:var(--ovf-txt-2)}
+.ovf-topic ul{display:flex;flex-direction:column;gap:8px;margin-top:4px;border-top:1px dashed var(--ovf-line);padding-top:12px}
+.ovf-topic ul li{font-size:.83rem;color:var(--ovf-txt-2);display:flex;gap:8px;align-items:baseline}
+.ovf-topic ul li::before{content:"›";color:var(--ovf-pink);font-weight:700}
+
+/* ===== 品牌解析（长文） ===== */
+.ovf-analysis{
+  background:linear-gradient(180deg,var(--ovf-bg-2),var(--ovf-bg));
+  border-top:1px solid var(--ovf-line);border-bottom:1px solid var(--ovf-line);
+}
+.ovf-analysis-wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,340px);gap:44px;align-items:start}
+.ovf-prose h3{font-size:1.18rem;font-weight:700;margin:30px 0 12px;color:var(--ovf-txt)}
+.ovf-prose h3:first-child{margin-top:0}
+.ovf-prose h3 span{color:var(--ovf-pink);font-size:.8rem;font-weight:600;display:block;letter-spacing:.14em;margin-bottom:4px}
+.ovf-prose p{font-size:.94rem;color:var(--ovf-txt-2);margin-bottom:14px;text-align:justify}
+.ovf-prose strong{color:var(--ovf-txt);font-weight:600}
+.ovf-side-card{
+  position:sticky;top:calc(var(--ovf-sticky) + 20px);
+  border:1px solid var(--ovf-line);border-radius:var(--ovf-radius);
+  background:var(--ovf-card);padding:24px;
+}
+.ovf-side-card h4{font-size:.95rem;margin-bottom:14px;font-weight:700}
+.ovf-side-card .ovf-side-row{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--ovf-line);font-size:.84rem}
+.ovf-side-card .ovf-side-row:last-child{border-bottom:none}
+.ovf-side-card .ovf-side-row b{color:var(--ovf-cyan);font-weight:700}
+.ovf-side-note{margin-top:14px;font-size:.78rem;color:var(--ovf-txt-3);line-height:1.7}
+
+/* ===== 创作者 ===== */
+.ovf-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.ovf-author{
+  display:flex;gap:18px;padding:22px;
+  border-radius:var(--ovf-radius);border:1px solid var(--ovf-line);
+  background:var(--ovf-card);transition:border-color .2s,transform .2s;
+}
+.ovf-author:hover{border-color:rgba(143,123,255,.45);transform:translateY(-3px)}
+.ovf-avatar{
+  width:58px;height:58px;border-radius:50%;flex:none;
+  display:grid;place-items:center;font-weight:800;font-size:1.15rem;
+  color:#fff;letter-spacing:.02em;border:2px solid rgba(255,255,255,.12);
+}
+.ovf-author-body{flex:1;min-width:0}
+.ovf-author-body h3{font-size:1rem;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ovf-author-body h3 .ovf-role{font-size:.68rem;font-weight:600;color:var(--ovf-cyan);border:1px solid rgba(63,240,216,.35);border-radius:999px;padding:1px 8px}
+.ovf-author-body p{font-size:.84rem;color:var(--ovf-txt-2);margin:8px 0 12px}
+.ovf-author-stats{display:flex;gap:18px;font-size:.76rem;color:var(--ovf-txt-3);flex-wrap:wrap}
+.ovf-author-stats b{color:var(--ovf-txt);font-weight:700}
+.ovf-author-more{
+  margin-top:12px;font-size:.78rem;color:var(--ovf-pink);
+  display:inline-flex;align-items:center;gap:5px;font-weight:600;
+}
+.ovf-author-more:hover{text-decoration:underline}
+
+/* ===== 评价 ===== */
+.ovf-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.ovf-comment{
+  border-radius:var(--ovf-radius-s);padding:20px;
+  background:var(--ovf-bg-2);border:1px solid var(--ovf-line);
+  position:relative;
+}
+.ovf-comment::before{
+  content:"“";position:absolute;right:16px;top:6px;
+  font-size:3rem;line-height:1;color:rgba(255,255,255,.06);font-family:Georgia,serif;
+}
+.ovf-comment-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.ovf-comment-avatar{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-size:.78rem;font-weight:700;color:#fff;flex:none}
+.ovf-comment-head strong{font-size:.85rem;font-weight:600}
+.ovf-comment-head small{font-size:.72rem;color:var(--ovf-txt-3)}
+.ovf-comment p{font-size:.86rem;color:var(--ovf-txt-2);position:relative;z-index:1}
+.ovf-comment-stars{color:var(--ovf-pink);font-size:.78rem;letter-spacing:2px;margin-top:8px}
+
+/* ===== 动态 / FAQ / 合作 ===== */
+.ovf-two-col{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:start}
+.ovf-news{display:flex;flex-direction:column;gap:0}
+.ovf-news-item{
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;
+  padding:18px 0;border-bottom:1px solid var(--ovf-line);
+}
+.ovf-news-date{font-size:.76rem;color:var(--ovf-violet);font-weight:700;letter-spacing:.04em;white-space:nowrap;padding-top:2px}
+.ovf-news-item h3{font-size:.95rem;font-weight:600;margin-bottom:4px}
+.ovf-news-item p{font-size:.82rem;color:var(--ovf-txt-3)}
+
+.ovf-faq details{
+  border-bottom:1px solid var(--ovf-line);
+  padding:16px 0;
+}
+.ovf-faq summary{
+  cursor:pointer;font-size:.94rem;font-weight:600;list-style:none;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.ovf-faq summary::-webkit-details-marker{display:none}
+.ovf-faq summary::after{
+  content:"+";flex:none;width:22px;height:22px;border-radius:7px;
+  display:grid;place-items:center;font-size:1rem;font-weight:400;
+  background:var(--ovf-bg-3);border:1px solid var(--ovf-line);color:var(--ovf-pink);
+  transition:transform .2s;
+}
+.ovf-faq details[open] summary::after{content:"–";transform:rotate(180deg)}
+.ovf-faq details p{font-size:.86rem;color:var(--ovf-txt-2);padding-top:12px}
+
+.ovf-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.ovf-partner{
+  padding:16px 18px;border-radius:var(--ovf-radius-s);
+  border:1px solid var(--ovf-line);background:var(--ovf-bg-2);
+  font-size:.84rem;color:var(--ovf-txt-2);display:flex;align-items:center;gap:10px;
+  transition:border-color .2s;
+}
+.ovf-partner:hover{border-color:rgba(63,240,216,.4)}
+.ovf-partner i{
+  width:26px;height:26px;border-radius:8px;flex:none;display:grid;place-items:center;
+  font-style:normal;font-size:.72rem;font-weight:800;color:#fff;
+  background:linear-gradient(135deg,var(--ovf-pink),var(--ovf-violet));
+}
+
+/* ===== 投稿 / 行动 ===== */
+.ovf-cta{
+  border-radius:26px;padding:52px 44px;
+  background:
+    radial-gradient(600px 300px at 88% 12%,rgba(255,92,138,.24),transparent 62%),
+    radial-gradient(500px 280px at 6% 90%,rgba(63,240,216,.16),transparent 60%),
+    linear-gradient(140deg,var(--ovf-bg-3),var(--ovf-card));
+  border:1px solid rgba(255,255,255,.1);
+  display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;
+}
+.ovf-cta h2{font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:800;margin-bottom:10px}
+.ovf-cta p{font-size:.9rem;color:var(--ovf-txt-2);max-width:56ch}
+
+/* ===== 页脚 ===== */
+.ovf-footer{
+  background:#080915;border-top:1px solid var(--ovf-line);
+  padding:56px 0 0;margin-top:0;
+}
+.ovf-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-bottom:44px}
+.ovf-footer-brand p{font-size:.84rem;color:var(--ovf-txt-3);margin-top:14px;max-width:34ch}
+.ovf-footer h4{font-size:.88rem;font-weight:700;margin-bottom:16px;color:var(--ovf-txt)}
+.ovf-footer ul{display:flex;flex-direction:column;gap:10px}
+.ovf-footer ul a{font-size:.83rem;color:var(--ovf-txt-3);transition:color .2s}
+.ovf-footer ul a:hover{color:var(--ovf-pink)}
+.ovf-footer-bottom{
+  border-top:1px solid var(--ovf-line);padding:20px 0;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:.76rem;color:var(--ovf-txt-3);
+}
+
+/* ===== 浮动组件 ===== */
+.ovf-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:var(--ovf-bg-3);border:1px solid var(--ovf-line);color:var(--ovf-txt);
+  padding:11px 22px;border-radius:999px;font-size:.84rem;
+  box-shadow:0 14px 36px rgba(0,0,0,.5);
+  opacity:0;pointer-events:none;transition:.28s;z-index:300;white-space:nowrap;
+}
+.ovf-toast.is-on{opacity:1;transform:translate(-50%,0)}
+.ovf-to-top{
+  position:fixed;right:22px;bottom:28px;z-index:200;
+  width:44px;height:44px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--ovf-pink),var(--ovf-violet));
+  color:#fff;box-shadow:0 10px 26px rgba(255,92,138,.4);
+  opacity:0;transform:translateY(12px);pointer-events:none;transition:.28s;
+}
+.ovf-to-top.is-on{opacity:1;transform:translateY(0);pointer-events:auto}
+.ovf-modal-mask{
+  position:fixed;inset:0;z-index:400;background:rgba(5,6,14,.76);
+  backdrop-filter:blur(6px);display:grid;place-items:center;padding:20px;
+  opacity:0;pointer-events:none;transition:.24s;
+}
+.ovf-modal-mask.is-on{opacity:1;pointer-events:auto}
+.ovf-modal{
+  width:min(520px,100%);background:var(--ovf-bg-2);
+  border:1px solid var(--ovf-line);border-radius:20px;padding:30px;
+  transform:translateY(14px);transition:.24s;max-height:86vh;overflow:auto;
+}
+.ovf-modal-mask.is-on .ovf-modal{transform:translateY(0)}
+.ovf-modal h3{font-size:1.16rem;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:9px}
+.ovf-modal p{font-size:.88rem;color:var(--ovf-txt-2);margin-bottom:18px}
+.ovf-modal label{display:block;font-size:.8rem;color:var(--ovf-txt-3);margin-bottom:6px}
+.ovf-modal input,.ovf-modal textarea,.ovf-modal select{
+  width:100%;background:var(--ovf-bg-3);border:1px solid var(--ovf-line);
+  border-radius:10px;padding:10px 13px;color:var(--ovf-txt);font-size:.88rem;
+  font-family:inherit;outline:none;margin-bottom:14px;transition:border-color .2s;
+}
+.ovf-modal input:focus,.ovf-modal textarea:focus,.ovf-modal select:focus{border-color:var(--ovf-pink)}
+.ovf-modal textarea{min-height:96px;resize:vertical}
+.ovf-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+.ovf-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.ovf-share-row button{
+  flex:1;min-width:92px;padding:11px;border-radius:10px;
+  background:var(--ovf-bg-3);border:1px solid var(--ovf-line);
+  font-size:.84rem;transition:.2s;
+}
+.ovf-share-row button:hover{border-color:var(--ovf-pink);color:var(--ovf-pink)}
+
+@media (max-width:960px){
+  .ovf-hero-grid{grid-template-columns:1fr;gap:38px}
+  .ovf-focus{grid-template-columns:1fr}
+  .ovf-topics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ovf-analysis-wrap{grid-template-columns:1fr}
+  .ovf-side-card{position:static}
+  .ovf-two-col{grid-template-columns:1fr;gap:36px}
+  .ovf-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .ovf-nav,.ovf-search{display:none}
+  .ovf-burger{display:grid}
+  .ovf-authors{grid-template-columns:1fr}
+  .ovf-comments{grid-template-columns:1fr}
+  .ovf-section{padding:54px 0}
+}
+@media (max-width:620px){
+  .ovf-topics{grid-template-columns:1fr}
+  .ovf-video-row{grid-template-columns:minmax(0,1fr);gap:12px;padding:16px 4px}
+  .ovf-video-idx{display:none}
+  .ovf-video-ops{flex-wrap:wrap}
+  .ovf-hero-stats{gap:22px}
+  .ovf-cta{padding:34px 24px}
+  .ovf-footer-grid{grid-template-columns:1fr}
+  .ovf-hero-float{right:0;top:-14px}
+  .ovf-announce-more{display:none}
+  .ovf-author{flex-direction:column;align-items:flex-start}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="ovf-topbar">
+  <div class="ovf-announce" role="region" aria-label="站点公告">
+    <div class="ovf-announce-inner">
+      <span class="ovf-announce-tag">官方发布</span>
+      <div class="ovf-announce-track">
+        <span class="ovf-announce-item"><b>新增</b>《樱花漫游指南》第 7 期上线，4K 高清画质</span>
+        <span class="ovf-announce-item"><b>报名</b>冬季原创动画短片挑战赛开放投稿</span>
+        <span class="ovf-announce-item"><b>更新</b>创作者中心支持批量上传与版权存证</span>
+      </div>
+      <a class="ovf-announce-more" href="#ovf-news">全部动态 →</a>
+    </div>
+  </div>
+
+  <header class="ovf-header">
+    <div class="ovf-header-inner">
+      <a class="ovf-brand" href="#ovf-top" aria-label="overflow樱花动漫官方站首页">
+        <span class="ovf-brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none"><path d="M32 8c10 0 18 8 18 18 0 6-2 10-7 14 4 6 5 12 3 16-6-1-11-5-14-9-3 1-6 1-9 0-3 4-8 8-14 9-2-4-1-10 3-16-5-4-7-8-7-14C5 16 13 8 23 8h9z" fill="#fff" opacity=".92"/><circle cx="25" cy="27" r="3" fill="#ff5c8a"/><circle cx="39" cy="27" r="3" fill="#8f7bff"/></svg>
+        </span>
+        <span class="ovf-brand-name">overflow樱花动漫<span>SAKURA ANIME OFFICIAL</span></span>
+      </a>
+
+      <nav class="ovf-nav" aria-label="主导航">
+        <a href="#ovf-focus">焦点推荐</a>
+        <a href="#ovf-videos">热门视频</a>
+        <a href="#ovf-topics">专题企划</a>
+        <a href="#ovf-analysis">品牌解析</a>
+        <a href="#ovf-authors">创作者</a>
+        <a href="#ovf-news">企业动态</a>
+      </nav>
+
+      <div class="ovf-head-tools">
+        <div class="ovf-search" role="search">
+          <input id="ovfSearchInput" type="search" placeholder="搜索番剧 / 创作者 / 专题" aria-label="站内搜索">
+          <span class="ovf-search-tip" id="ovfSearchTip"></span>
+          <button class="ovf-search-btn" id="ovfSearchBtn" type="button">搜索</button>
+        </div>
+        <button class="ovf-burger" id="ovfBurger" type="button" aria-label="展开导航菜单" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div class="ovf-drawer" id="ovfDrawer">
+  <nav aria-label="移动端导航">
+    <a href="#ovf-focus">焦点推荐</a>
+    <a href="#ovf-videos">热门视频</a>
+    <a href="#ovf-topics">专题企划</a>
+    <a href="#ovf-analysis">品牌解析</a>
+    <a href="#ovf-authors">创作者</a>
+    <a href="#ovf-comments">用户口碑</a>
+    <a href="#ovf-news">企业动态</a>
+    <a href="#ovf-faq">常见问题</a>
+    <a href="#ovf-submit">投稿入口</a>
+  </nav>
+</div>
+
+<main id="ovf-top">
+
+  <!-- ============ 首屏 ============ -->
+  <section class="ovf-hero" aria-label="品牌首屏">
+    <div class="ovf-container ovf-hero-grid">
+      <div class="ovf-hero-copy">
+        <span class="ovf-hero-eyebrow">动画视频品牌官方网站</span>
+        <h1>overflow樱花动漫</h1>
+        <p class="ovf-hero-sub">高清原创 · 正版内容 · 值得信赖的动漫社区平台</p>
+        <p class="ovf-hero-lead">
+          作为深耕动漫垂直领域的品牌官网，overflow樱花动漫以专业的内容运营与开放的创作者生态，
+          持续为观众提供精品番剧、原创短片与幕后纪录，让每一次观看都成为与热爱同频的陪伴。
+        </p>
+        <div class="ovf-hero-actions">
+          <a class="ovf-btn ovf-btn--primary" href="#ovf-videos">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            立即观看
+          </a>
+          <a class="ovf-btn ovf-btn--ghost" href="#ovf-submit">成为创作者</a>
+        </div>
+        <div class="ovf-hero-stats">
+          <div class="ovf-stat"><b>2,860<i>万</i></b><span>月活跃观众</span></div>
+          <div class="ovf-stat"><b>1,740<i>位</i></b><span>签约创作者</span></div>
+          <div class="ovf-stat"><b>98.6<i>%</i></b><span>正版内容占比</span></div>
+        </div>
+      </div>
+
+      <div class="ovf-hero-visual">
+        <div class="ovf-hero-float">
+          <b>4K</b>
+          高清片源持续上新
+        </div>
+        <figure class="ovf-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23242a52'/%3E%3Cstop offset='.55' stop-color='%235a3a6e'/%3E%3Cstop offset='1' stop-color='%23c9567f'/%3E%3C/linearGradient%3E%3ClinearGradient id='ground' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23141628'/%3E%3Cstop offset='1' stop-color='%23222440'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23sky)'/%3E%3Ccircle cx='600' cy='150' r='86' fill='%23ffd0e0' opacity='.55'/%3E%3Ccircle cx='600' cy='150' r='52' fill='%23ffe9f2'/%3E%3Cpath d='M0 430 Q200 350 400 410 T800 380 V600 H0 Z' fill='url(%23ground)'/%3E%3Cg fill='%23ffb7cd' opacity='.85'%3E%3Ccircle cx='140' cy='200' r='7'/%3E%3Ccircle cx='220' cy='150' r='5'/%3E%3Ccircle cx='320' cy='230' r='6'/%3E%3Ccircle cx='470' cy='160' r='8'/%3E%3Ccircle cx='700' cy='250' r='5'/%3E%3Ccircle cx='90' cy='300' r='4'/%3E%3C/g%3E%3Cg stroke='%23ff8fb4' stroke-width='3' fill='none' opacity='.8'%3E%3Cpath d='M240 330 q30 -40 60 0 q-30 30 -60 0'/%3E%3Cpath d='M520 300 q26 -34 52 0 q-26 26 -52 0'/%3E%3C/g%3E%3Cg%3E%3Cpath d='M330 520 l26 -110 30 4 -14 108 z' fill='%23101429'/%3E%3Cpath d='M470 520 l-26 -110 -30 4 14 108 z' fill='%23101429'/%3E%3Ccircle cx='400' cy='380' r='38' fill='%23f6d6c4'/%3E%3Cpath d='M362 372 q38 -46 76 0 q-12 -34 -38 -34 q-26 0 -38 34z' fill='%23ff6f9c'/%3E%3Cpath d='M368 420 q32 30 64 0 l14 70 q-46 24 -92 0 z' fill='%23e6ecff'/%3E%3C/g%3E%3Cg fill='%23ffd9e6' opacity='.9'%3E%3Ccircle cx='160' cy='470' r='9'/%3E%3Ccircle cx='205' cy='500' r='6'/%3E%3Ccircle cx='640' cy='480' r='8'/%3E%3Ccircle cx='690' cy='520' r='5'/%3E%3C/g%3E%3C/svg%3E" alt="overflow樱花动漫首屏主视觉：暮色樱色天空下伫立的少女与飘落的樱花瓣" width="800" height="600">
+          <figcaption class="ovf-hero-frame-caption">
+            <div>
+              <strong>《樱花漫游指南》第 7 期</strong>
+              <small>4K 高清 · 官方原创 · 更新于 11 月 20 日</small>
+            </div>
+            <span class="ovf-play-badge">▶ 播放</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 焦点推荐 ============ -->
+  <section class="ovf-section ovf-anchor" id="ovf-focus">
+    <div class="ovf-container">
+      <div class="ovf-sec-head">
+        <h2>焦点推荐 · overflow樱花动漫精选</h2>
+        <p>编辑部与算法共同挑选的精品内容，覆盖新番解读、原创短片与创作者幕后。</p>
+        <a class="ovf-sec-link" href="#ovf-videos">查看全部 →</a>
+      </div>
+
+      <div class="ovf-focus">
+        <article class="ovf-focus-main">
+          <div class="ovf-thumb">
+            <span class="ovf-focus-badge">本周主推</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='n1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231a1d38'/%3E%3Cstop offset='1' stop-color='%23302b57'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23n1)'/%3E%3Ccircle cx='180' cy='120' r='70' fill='%23ff5c8a' opacity='.28'/%3E%3Ccircle cx='650' cy='330' r='96' fill='%233ff0d8' opacity='.2'/%3E%3Cpath d='M80 330 q120 -140 240 0 t240 0' stroke='%23ff8fb4' stroke-width='4' fill='none' opacity='.85'/%3E%3Cg fill='%23ffffff' opacity='.9'%3E%3Crect x='360' y='180' width='14' height='80' rx='4'/%3E%3Crect x='390' y='150' width='14' height='140' rx='4'/%3E%3Crect x='420' y='200' width='14' height='60' rx='4'/%3E%3C/g%3E%3Ctext x='400' y='410' font-family='sans-serif' font-size='26' fill='%23ffe9f2' text-anchor='middle' opacity='.9'%3E樱花漫游指南·第7期%3C/text%3E%3C/svg%3E" alt="《樱花漫游指南》第7期封面：暮色与樱花曲线构成的动画分镜" width="800" height="450">
+          </div>
+          <div class="ovf-focus-body">
+            <h3>《樱花漫游指南》第 7 期：把城市春天装进 12 分钟动画</h3>
+            <p>以城市街巷为舞台的原创治愈系短篇，本期加入实时渲染的樱吹雪镜头与全新配乐，讲述一次意外相遇如何改变两个人的日常节奏。</p>
+            <div class="ovf-video-meta">
+              <span class="ovf-tag">原创短片</span>
+              <span>樱野工作室</span>
+              <span>126.4 万播放</span>
+              <span>2.3 万点赞</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="ovf-focus-list">
+          <article class="ovf-focus-item">
+            <span class="ovf-num">01</span>
+            <div>
+              <h4>新番深度测评：本季 8 部作品的分镜与叙事取舍</h4>
+              <small>动画研究所 · 42.1 万播放 · 专业测评</small>
+            </div>
+          </article>
+          <article class="ovf-focus-item">
+            <span class="ovf-num">02</span>
+            <div>
+              <h4>创作者幕后：从约稿到成片，一支 30 秒 PV 的 17 天</h4>
+              <small>镜野Hikari · 28.7 万播放 · 创作幕后</small>
+            </div>
+          </article>
+          <article class="ovf-focus-item">
+            <span class="ovf-num">03</span>
+            <div>
+              <h4>声音的魔法：动漫配音与音效设计入门公开课</h4>
+              <small>声之丘 · 19.3 万播放 · 教程干货</small>
+            </div>
+          </article>
+          <article class="ovf-focus-item">
+            <span class="ovf-num">04</span>
+            <div>
+              <h4>从分镜到成片，独立动画人如何管理一支 6 人小队</h4>
+              <small>纸鸢Ani · 15.6 万播放 · 经验分享</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 热门视频 ============ -->
+  <section class="ovf-section ovf-anchor" id="ovf-videos">
+    <div class="ovf-container">
+      <div class="ovf-sec-head">
+        <h2>热门视频 · 本周社区热看</h2>
+        <p>按播放、互动与口碑综合排序，overflow樱花动漫持续发掘社区里的好作品。</p>
+        <a class="ovf-sec-link" href="#ovf-topics">更多专题 →</a>
+      </div>
+
+      <div class="ovf-video-list" id="ovfVideoList">
+        <article class="ovf-video-row" data-title="樱花季配色学 动画色彩">
+          <span class="ovf-video-idx">01</span>
+          <div class="ovf-video-info">
+            <h3>樱花季配色学：动画里那抹粉是怎么被调出来的</h3>
+            <div class="ovf-video-meta">
+              <span class="ovf-tag">知识科普</span>
+              <span>作者：色见Yuki</span>
+              <span>播放 96.2 万</span>
+              <span>收藏 4.1 万</span>
+            </div>
+          </div>
+          <div class="ovf-video-ops">
+            <button class="ovf-icon-btn ovf-like" type="button" aria-pressed="false" aria-label="点赞 樱花季配色学">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-6.5-4.4-9-8.7C.6 8 2.7 4.5 6.4 4.5c2.2 0 3.7 1.2 5.6 3.3 1.9-2.1 3.4-3.3 5.6-3.3 3.7 0 5.8 3.5 3.4 7.8C18.5 16.6 12 21 12 21z"/></svg>
+              <span class="ovf-like-num">2.8万</span>
+            </button>
+            <button class="ovf-icon-btn ovf-save" type="button" aria-pressed="false" aria-label="收藏 樱花季配色学">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4.5L5 21V4a1 1 0 0 1 1-1z"/></svg>
+              <span>收藏</span>
+            </button>
+            <button class="ovf-icon-btn ovf-share" type="button" aria-label="分享 樱花季配色学">分享</button>
+          </div>
+        </article>
+
+        <article class="ovf-video-row" data-title="新番片头 分镜拆解">
+          <span class="ovf-video-idx">02</span>
+          <div class="ovf-video-info">
+            <h3>新番片头分镜拆解：90 秒里藏着多少次情绪转折</h3>
+            <div class="ovf-video-meta">
+              <span class="ovf-tag">深度测评</span>
+              <span>作者：动画研究所</span>
+              <span>播放 81.5 万</span>
+              <span>收藏 3.6 万</span>
+            </div>
+          </div>
+          <div class="ovf-video-ops">
+            <button class="ovf-icon-btn ovf-like" type="button" aria-pressed="false" aria-label="点赞 新番片头分镜拆解">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-6.5-4.4-9-8.7C.6 8 2.7 4.5 6.4 4.5c2.2 0 3.7 1.2 5.6 3.3 1.9-2.1 3.4-3.3 5.6-3.3 3.7 0 5.8 3.5 3.4 7.8C18.5 16.6 12 21 12 21z"/></svg>
+              <span class="ovf-like-num">2.1万</span>
+            </button>
+            <button class="ovf-icon-btn ovf-save" type="button" aria-pressed="false" aria-label="收藏 新番片头分镜拆解">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4.5L5 21V4a1 1 0 0 1 1-1z"/></svg>
+              <span>收藏</span>
+            </button>
+            <button class="ovf-icon-btn ovf-share" type="button" aria-label="分享 新番片头分镜拆解">分享</button>
+          </div>
+        </article>
+
+        <article class="ovf-video-row" data-title="城市探索 动漫取景地">
+          <span class="ovf-video-idx">03</span>
+          <div class="ovf-video-info">
+            <h3>跟着动漫去旅行：六个真实取景地的城市探索记录</h3>
+            <div class="ovf-video-meta">
+              <span class="ovf-tag ovf-tag--pink">城市探索</span>
+              <span>作者：旅次Aki</span>
+              <span>播放 68.9 万</span>
+              <span>收藏 2.9 万</span>
+            </div>
+          </div>
+          <div class="ovf-video-ops">
+            <button class="ovf-icon-btn ovf-like" type="button" aria-pressed="false" aria-label="点赞 跟着动漫去旅行">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-6.5-4.4-9-8.7C.6 8 2.7 4.5 6.4 4.5c2.2 0 3.7 1.2 5.6 3.3 1.9-2.1 3.4-3.3 5.6-3.3 3.7 0 5.8 3.5 3.4 7.8C18.5 16.6 12 21 12 21z"/></svg>
+              <span class="ovf-like-num">1.7万</span>
+            </button>
+            <button class="ovf-icon-btn ovf-save" type="button" aria-pressed="false" aria-label="收藏 跟着动漫去旅行">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4.5L5 21V4a1 1 0 0 1 1-1z"/></svg>
+              <span>收藏</span>
+            </button>
+            <button class="ovf-icon-btn ovf-share" type="button" aria-label="分享 跟着动漫去旅行">分享</button>
+          </div>
+        </article>
+
+        <article class="ovf-video-row" data-title="声优访谈 声音的魔法">
+          <span class="ovf-video-idx">04</span>
+          <div class="ovf-video-info">
+            <h3>声优访谈：一句台词背后的 27 次重录与情绪校准</h3>
+            <div class="ovf-video-meta">
+              <span class="ovf-tag">人物访谈</span>
+              <span>作者：声之丘</span>
+              <span>播放 54.3 万</span>
+              <span>收藏 2.2 万</span>
+            </div>
+          </div>
+          <div class="ovf-video-ops">
+            <button class="ovf-icon-btn ovf-like" type="button" aria-pressed="false" aria-label="点赞 声优访谈">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-6.5-4.4-9-8.7C.6 8 2.7 4.5 6.4 4.5c2.2 0 3.7 1.2 5.6 3.3 1.9-2.1 3.4-3.3 5.6-3.3 3.7 0 5.8 3.5 3.4 7.8C18.5 16.6 12 21 12 21z"/></svg>
+              <span class="ovf-like-num">1.3万</span>
+            </button>
+            <button class="ovf-icon-btn ovf-save" type="button" aria-pressed="false" aria-label="收藏 声优访谈">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4.5L5 21V4a1 1 0 0 1 1-1z"/></svg>
+              <span>收藏</span>
+            </button>
+            <button class="ovf-icon-btn ovf-share" type="button" aria-label="分享 声优访谈">分享</button>
+          </div>
+        </article>
+
+        <article class="ovf-video-row" data-title="手绘动画 教程干货">
+          <span class="ovf-video-idx">05</span>
+          <div class="ovf-video-info">
+            <h3>手绘动画入门：12 帧循环如何做出自然的呼吸感</h3>
+            <div class="ovf-video-meta">
+              <span class="ovf-tag">教程干货</span>
+              <span>作者：纸鸢Ani</span>
+              <span>播放 47.8 万</span>
+              <span>收藏 3.3 万</span>
+            </div>
+          </div>
+          <div class="ovf-video-ops">
+            <button class="ovf-icon-btn ovf-like" type="button" aria-pressed="false" aria-label="点赞 手绘动画入门">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-6.5-4.4-9-8.7C.6 8 2.7 4.5 6.4 4.5c2.2 0 3.7 1.2 5.6 3.3 1.9-2.1 3.4-3.3 5.6-3.3 3.7 0 5.8 3.5 3.4 7.8C18.5 16.6 12 21 12 21z"/></svg>
+              <span class="ovf-like-num">1.1万</span>
+            </button>
+            <button class="ovf-icon-btn ovf-save" type="button" aria-pressed="false" aria-label="收藏 手绘动画入门">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4.5L5 21V4a1 1 0 0 1 1-1z"/></svg>
+              <span>收藏</span>
+            </button>
+            <button class="ovf-icon-btn ovf-share" type="button" aria-label="分享 手绘动画入门">分享</button>
+          </div>
+        </article>
+
+        <article class="ovf-video-row" data-title="治愈影像 日常记录">
+          <span class="ovf-video-idx">06</span>
+          <div class="ovf-video-info">
+            <h3>周更治愈影像：用 4 分钟记录一个安静的雨天午后</h3>
+            <div class="ovf-video-meta">
+              <span class="ovf-tag">治愈影像</span>
+              <span>作者：雨音Mio</span>
+              <span>播放 39.6 万</span>
+              <span>收藏 2.7 万</span>
+            </div>
+          </div>
+          <div class="ovf-video-ops">
+            <button class="ovf-icon-btn ovf-like" type="button" aria-pressed="false" aria-label="点赞 周更治愈影像">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-6.5-4.4-9-8.7C.6 8 2.7 4.5 6.4 4.5c2.2 0 3.7 1.2 5.6 3.3 1.9-2.1 3.4-3.3 5.6-3.3 3.7 0 5.8 3.5 3.4 7.8C18.5 16.6 12 21 12 21z"/></svg>
+              <span class="ovf-like-num">9,800</span>
+            </button>
+            <button class="ovf-icon-btn ovf-save" type="button" aria-pressed="false" aria-label="收藏 周更治愈影像">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4.5L5 21V4a1 1 0 0 1 1-1z"/></svg>
+              <span>收藏</span>
+            </button>
+            <button class="ovf-icon-btn ovf-share" type="button" aria-label="分享 周更治愈影像">分享</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 专题企划 ============ -->
+  <section class="ovf-section ovf-anchor" id="ovf-topics">
+    <div class="ovf-container">
+      <div class="ovf-sec-head">
+        <h2>专题企划 · 持续运营的内容生态</h2>
+        <p>围绕不同题材打造的长期企划，让原创动画与观众之间形成更稳定的连接。</p>
+      </div>
+
+      <div class="ovf-topics">
+        <article class="ovf-topic ovf-topic--accent">
+          <span class="ovf-topic-status">更新中 · 第 7 期</span>
+          <h3>樱花漫游指南</h3>
+          <p>以城市春季为主题的原创短篇企划，每期由不同创作者带来独立故事，共享同一套世界观设定。</p>
+          <ul>
+            <li>第 7 期：春末的电车与一封未寄出的信</li>
+            <li>第 6 期：旧书店里的樱色书签</li>
+            <li>第 5 期：天台上的十二分钟日落</li>
+          </ul>
+        </article>
+
+        <article class="ovf-topic">
+          <span class="ovf-topic-status">更新中 · 每周三</span>
+          <h3>分镜拆解实验室</h3>
+          <p>用逐帧方式拆解热门动画段落，从构图、运镜到节奏控制，帮助创作者把感性观感转换成可复用的方法。</p>
+          <ul>
+            <li>本季新番片头情绪曲线分析</li>
+            <li>打斗场景中镜头切换的三种逻辑</li>
+            <li>静止镜头如何制造张力</li>
+          </ul>
+        </article>
+
+        <article class="ovf-topic">
+          <span class="ovf-topic-status">已完结 · 全 9 期</span>
+          <h3>声音的魔法公开课</h3>
+          <p>面向动画爱好者的声音设计入门课，涵盖配音指导、拟音采集与混音流程，配套可下载的练习工程文件。</p>
+          <ul>
+            <li>第 1 讲：一句台词的情绪层级</li>
+            <li>第 5 讲：环境音如何建立空间感</li>
+            <li>第 9 讲：成片混音的取舍原则</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 品牌解析（长文） ============ -->
+  <section class="ovf-section ovf-analysis ovf-anchor" id="ovf-analysis">
+    <div class="ovf-container">
+      <div class="ovf-sec-head">
+        <h2>品牌解析 · 为什么是 overflow樱花动漫</h2>
+        <p>从品牌理念到内容标准，理解一个动漫视频官网如何持续运营、如何对创作者和观众同时负责。</p>
+      </div>
+
+      <div class="ovf-analysis-wrap">
+        <div class="ovf-prose">
+          <h3><span>PART 01</span>关键词解析：overflow樱花动漫的内容坐标</h3>
+          <p>
+            overflow樱花动漫并不是一个简单的视频聚合页面，而是以“樱花”为视觉母题、以“overflow”为内容态度的品牌型动漫社区。
+            在关键词层面，它可以拆成三层含义：第一层是<b>题材坐标</b>，樱花代表着季节感、青春感与转瞬即逝的美，
+            这使得平台在选题上天然偏好治愈、成长与日常记录类动画；第二层是<b>技术坐标</b>，over flow 意味着画面与情绪的双重溢出，
+            平台在成片标准上坚持高清、流畅与声音细节的完整呈现；第三层是<b>社区坐标</b>，平台希望创作者与观众之间的反馈像花期一样持续循环，
+            而不是一次性消费。
+          </p>
+          <p>
+            因此，当用户搜索“overflow樱花动漫在线观看”时，他寻找的不只是一个播放入口，
+            而是一个能够稳定提供正版高清内容、能看到创作者名字、能参与讨论与收藏的动漫社区。
+            官方网站围绕这一点构建了导航、搜索、标签筛选、创作者档案与评论口碑等完整链路，
+            让每一次访问都有清晰的下一步动作。
+          </p>
+
+          <h3><span>PART 02</span>内容标准：从“能看”到“值得反复看”</h3>
+          <p>
+            平台的内容团队把选片标准拆成四个可执行维度：<b>叙事完整性</b>、<b>画面可读性</b>、<b>声音完成度</b>与<b>版权清晰度</b>。
+            前三项决定一部作品是否能被称为“精品内容”，最后一项决定它能否长期留在站内。
+            overflow樱花动漫坚持官方发布与正版授权并行，对独立创作者则提供版权存证与首发保护，
+            让原创内容在上传的第一时间就获得可追溯的凭证。
+          </p>
+          <p>
+            在具体运营上，平台将内容分为三类：常态更新的番剧与短篇、按季度推进的专题企划、以及创作者自发的日常记录。
+            三类内容共享同一套标签体系，但排序逻辑不同——专题看重完整性，日常内容看重互动与更新频率。
+            这种分层让首页不会只被一种内容形态占据，也让新观众更容易找到入口。
+          </p>
+
+          <h3><span>PART 03</span>创作者生态：让 1740 位创作者被看见</h3>
+          <p>
+            对动漫视频平台而言，创作者是最稀缺的资源。overflow樱花动漫采用“签约 + 开放投稿”的双轨机制：
+            签约创作者获得稳定的制作支持与分成方案，开放投稿则保证社区始终有新面孔出现。
+            平台为每位创作者建立独立档案，记录擅长领域、作品数量与粉丝规模，
+            并在视频条目中直接露出作者名，让观众在观看时就知道该记住谁。
+          </p>
+          <p>
+            同时，平台每年举办原创动画短片挑战赛与分镜挑战赛，设置报名、上传、投票与评审四个公开环节，
+            把比赛过程本身也变成可被观看的内容。对于刚起步的创作者，创作灵感区会提供脚本结构建议、标题优化与剪辑思路，
+            降低从想法到成片的门槛。正是这种持续投入，让“社区活力”不再是一句口号，而是能被数据与作品验证的状态。
+          </p>
+
+          <h3><span>PART 04</span>用户关系：口碑、真实与长期陪伴</h3>
+          <p>
+            一个品牌官网的可信度，最终来自用户是否愿意再次回来。平台在用户侧做了三件小事：
+            收藏与点赞状态在不同设备间保持一致；评论区鼓励具体、有信息量的短评而非情绪宣泄；
+            客服与反馈入口在任何页面都能被找到。这些设计不追求短期数据爆发，而是追求口口相传的长期口碑。
+          </p>
+          <p>
+            平台同时把社会责任纳入日常运营，包括对未成年观众的内容分级提示、对创作者版权知识的持续科普，
+            以及对社区语言文明的温和引导。我们相信，值得信赖的动漫平台不是靠一次活动建立的，
+            而是靠内容品质、更新节奏与社区氛围的长期叠加。overflow樱花动漫会继续深耕垂直领域，
+            把“用户首选”作为结果而不是目标，用一部又一部作品说话。
+          </p>
+        </div>
+
+        <aside class="ovf-side-card" aria-label="平台数据摘要">
+          <h4>平台关键数据</h4>
+          <div class="ovf-side-row"><span>正版高清片源</span><b>12,400+</b></div>
+          <div class="ovf-side-row"><span>签约与入驻创作者</span><b>1,740</b></div>
+          <div class="ovf-side-row"><span>月活跃观众</span><b>2,860 万</b></div>
+          <div class="ovf-side-row"><span>专题企划累计期数</span><b>136 期</b></div>
+          <div class="ovf-side-row"><span>社区日均互动</span><b>48 万次</b></div>
+          <p class="ovf-side-note">数据由平台内容运营中心按月统计，用于评估内容生态健康度与创作者成长情况，不对外用于排名交易。</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 创作者矩阵 ============ -->
+  <section class="ovf-section ovf-anchor" id="ovf-authors">
+    <div class="ovf-container">
+      <div class="ovf-sec-head">
+        <h2>创作者矩阵 · 与你一起成长的人</h2>
+        <p>六位长期活跃在 overflow樱花动漫 的创作者，覆盖测评、幕后、科普与治愈影像等方向。</p>
+        <a class="ovf-sec-link" href="#ovf-submit">申请入驻 →</a>
+      </div>
+
+      <div class="ovf-authors">
+        <article class="ovf-author">
+          <div class="ovf-avatar" style="background:linear-gradient(135deg,#ff5c8a,#8f7bff)">樱</div>
+          <div class="ovf-author-body">
+            <h3>樱野工作室<span class="ovf-role">官方签约</span></h3>
+            <p>擅长治愈系原创短篇与季节主题企划，画面偏爱低饱和樱色与长镜头。团队由 6 人组成，负责脚本、分镜与后期全流程，代表作《樱花漫游指南》系列以稳定的季度更新节奏积累了口碑。</p>
+            <div class="ovf-author-stats"><span>作品 <b>86</b></span><span>粉丝 <b>124 万</b></span><span>领域 原创短片</span></div>
+            <a class="ovf-author-more" href="#ovf-videos">查看作品 →</a>
+          </div>
+        </article>
+
+        <article class="ovf-author">
+          <div class="ovf-avatar" style="background:linear-gradient(135deg,#3ff0d8,#2a6f9e)">研</div>
+          <div class="ovf-author-body">
+            <h3>动画研究所<span class="ovf-role">专业测评</span></h3>
+            <p>以分镜与叙事分析见长的测评团队，习惯把观感拆成可验证的结构问题。每期视频配有逐帧截图与时间码，方便创作者对照学习，长期更新《分镜拆解实验室》专题。</p>
+            <div class="ovf-author-stats"><span>作品 <b>142</b></span><span>粉丝 <b>98 万</b></span><span>领域 深度测评</span></div>
+            <a class="ovf-author-more" href="#ovf-videos">查看作品 →</a>
+          </div>
+        </article>
+
+        <article class="ovf-author">
+          <div class="ovf-avatar" style="background:linear-gradient(135deg,#8f7bff,#ff5c8a)">光</div>
+          <div class="ovf-author-body">
+            <h3>镜野Hikari<span class="ovf-role">创作幕后</span></h3>
+            <p>专注记录一支动画从约稿到成片的完整过程，擅长把制作中的犹豫、返工与取舍讲清楚。视频节奏克制，常以制片笔记作为补充，被不少新人创作者当作流程参考。</p>
+            <div class="ovf-author-stats"><span>作品 <b>64</b></span><span>粉丝 <b>76 万</b></span><span>领域 创作幕后</span></div>
+            <a class="ovf-author-more" href="#ovf-videos">查看作品 →</a>
+          </div>
+        </article>
+
+        <article class="ovf-author">
+          <div class="ovf-avatar" style="background:linear-gradient(135deg,#f7b955,#ff5c8a)">声</div>
+          <div class="ovf-author-body">
+            <h3>声之丘<span class="ovf-role">声音设计</span></h3>
+            <p>由两位配音与混音从业者共同运营，专注动漫声音的科普与访谈。内容包含配音指导、拟音采集与混音流程，配套练习工程文件可免费下载，是站内收藏率最高的创作者之一。</p>
+            <div class="ovf-author-stats"><span>作品 <b>52</b></span><span>粉丝 <b>63 万</b></span><span>领域 声音设计</span></div>
+            <a class="ovf-author-more" href="#ovf-videos">查看作品 →</a>
+          </div>
+        </article>
+
+        <article class="ovf-author">
+          <div class="ovf-avatar" style="background:linear-gradient(135deg,#3ff0d8,#8f7bff)">纸</div>
+          <div class="ovf-author-body">
+            <h3>纸鸢Ani<span class="ovf-role">教程干货</span></h3>
+            <p>独立动画人，擅长手绘逐帧与循环动作教学。视频常以“先给结果再拆过程”的方式展开，进度条标注关键节点，方便观众反复回看，近期主讲 12 帧循环与呼吸感练习。</p>
+            <div class="ovf-author-stats"><span>作品 <b>73</b></span><span>粉丝 <b>58 万</b></span><span>领域 教程干货</span></div>
+            <a class="ovf-author-more" href="#ovf-videos">查看作品 →</a>
+          </div>
+        </article>
+
+        <article class="ovf-author">
+          <div class="ovf-avatar" style="background:linear-gradient(135deg,#ff8fb4,#3a3f74)">雨</div>
+          <div class="ovf-author-body">
+            <h3>雨音Mio<span class="ovf-role">治愈影像</span></h3>
+            <p>习惯用四到六分钟记录安静日常，雨天、午后与窗边是高频场景。作品少有台词，靠环境音与光影推进，评论区常被观众当作情绪树洞，形成了温和稳定的社区氛围。</p>
+            <div class="ovf-author-stats"><span>作品 <b>118</b></span><span>粉丝 <b>47 万</b></span><span>领域 治愈影像</span></div>
+            <a class="ovf-author-more" href="#ovf-videos">查看作品 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 用户评价 ============ -->
+  <section class="ovf-section ovf-anchor" id="ovf-comments">
+    <div class="ovf-container">
+      <div class="ovf-sec-head">
+        <h2>用户口碑 · 来自社区的短评</h2>
+        <p>不同观看时长、不同使用场景下的真实反馈，帮助我们持续打磨官网体验。</p>
+      </div>
+
+      <div class="ovf-comments">
+        <article class="ovf-comment">
+          <div class="ovf-comment-head">
+            <span class="ovf-comment-avatar" style="background:#ff5c8a">蓝</span>
+            <div><strong>蓝色列车</strong><br><small>观看 2 年 · 每周 5 次</small></div>
+          </div>
+          <p>最打动我的是创作者名字被认真放在标题下面，而不是藏进简介。看完《樱花漫游指南》会顺手点进作者主页，这种链路很自然。</p>
+          <div class="ovf-comment-stars">★★★★★</div>
+        </article>
+
+        <article class="ovf-comment">
+          <div class="ovf-comment-head">
+            <span class="ovf-comment-avatar" style="background:#8f7bff">郁</span>
+            <div><strong>郁金香不说话</strong><br><small>观看 8 个月 · 收藏 312 条</small></div>
+          </div>
+          <p>画质稳定，拖动进度条加载也快。我做分镜练习，经常需要反复暂停截图，站内播放器的快捷键还算顺手，希望以后能支持更细的帧步进。</p>
+          <div class="ovf-comment-stars">★★★★☆</div>
+        </article>
+
+        <article class="ovf-comment">
+          <div class="ovf-comment-head">
+            <span class="ovf-comment-avatar" style="background:#3ff0d8">阿</span>
+            <div><strong>阿岚的硬盘</strong><br><small>观看 3 年 · 投稿 4 次</small></div>
+          </div>
+          <p>投稿流程比我预想的清楚，版权存证那一步让我放心。反馈速度不算最快，但每次都会给具体修改意见，不是模板回复，这点很难得。</p>
+          <div class="ovf-comment-stars">★★★★★</div>
+        </article>
+
+        <article class="ovf-comment">
+          <div class="ovf-comment-head">
+            <span class="ovf-comment-avatar" style="background:#f7b955">星</span>
+            <div><strong>星屑收集者</strong><br><small>观看 1 年 · 主要看治愈区</small></div>
+          </div>
+          <p>下班后会固定来雨音Mio的频道待一会儿。评论区很干净，大家只是安静说话，感觉像一个小房间，而不是大声喧哗的广场。</p>
+          <div class="ovf-comment-stars">★★★★★</div>
+        </article>
+
+        <article class="ovf-comment">
+          <div class="ovf-comment-head">
+            <span class="ovf-comment-avatar" style="background:#ff8fb4">北</span>
+            <div><strong>北岸没有雪</strong><br><small>观看 4 个月 · 学生</small></div>
+          </div>
+          <p>专题做得比预期深，本来只想找番看，结果被分镜拆解吸引，连着看了三集公开课。要是能按难度分级就更好了。</p>
+          <div class="ovf-comment-stars">★★★★☆</div>
+        </article>
+
+        <article class="ovf-comment">
+          <div class="ovf-comment-head">
+            <span class="ovf-comment-avatar" style="background:#2a6f9e">旧</span>
+            <div><strong>旧书店的猫</strong><br><small>观看 5 年 · 老用户</small></div>
+          </div>
+          <p>从早期的小站一直用到现在，界面变了很多次，但正版和原创这两条底线没变。作为一个动漫官网，能持续运营这么久本身就很说明问题。</p>
+          <div class="ovf-comment-stars">★★★★★</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 企业动态 + FAQ ============ -->
+  <section class="ovf-section ovf-anchor" id="ovf-news">
+    <div class="ovf-container">
+      <div class="ovf-two-col">
+        <div>
+          <div class="ovf-sec-head">
+            <h2>企业动态 · 官方发布</h2>
+            <p>与品牌相关的更新、活动与合作信息，第一时间在此同步。</p>
+          </div>
+          <div class="ovf-news">
+            <article class="ovf-news-item">
+              <span class="ovf-news-date">11.20</span>
+              <div>
+                <h3>《樱花漫游指南》第 7 期正式上线</h3>
+                <p>4K 高清版本同步开放，配套分镜手记与配乐试听页已更新至创作者中心。</p>
+              </div>
+            </article>
+            <article class="ovf-news-item">
+              <span class="ovf-news-date">11.12</span>
+              <div>
+                <h3>冬季原创动画短片挑战赛开启报名</h3>
+                <p>本届主题为“冬天里的一次相遇”，投稿截止 12 月 20 日，评审团由签约创作者与平台编辑共同组成。</p>
+              </div>
+            </article>
+            <article class="ovf-news-item">
+              <span class="ovf-news-date">11.05</span>
+              <div>
+                <h3>创作者中心上线批量上传与版权存证</h3>
+                <p>支持一次上传多集内容并自动生成校验信息，减少重复填表，提升上传与审核效率。</p>
+              </div>
+            </article>
+            <article class="ovf-news-item">
+              <span class="ovf-news-date">10.28</span>
+              <div>
+                <h3>平台与三家动画工作室达成内容合作</h3>
+                <p>合作方将陆续在官网首发原创短篇，并参与分镜拆解实验室的联合特辑。</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="ovf-sec-head" style="margin-top:48px">
+            <h2>合作伙伴 · 一同深耕内容生态</h2>
+          </div>
+          <div class="ovf-partners">
+            <div class="ovf-partner"><i>樱</i>樱野工作室</div>
+            <div class="ovf-partner"><i>声</i>声之丘音频</div>
+            <div class="ovf-partner"><i>纸</i>纸鸢动画工坊</div>
+            <div class="ovf-partner"><i>镜</i>镜野制片</div>
+          </div>
+        </div>
+
+        <div class="ovf-faq" id="ovf-faq">
+          <div class="ovf-sec-head">
+            <h2>常见问题</h2>
+          </div>
+          <details open>
+            <summary>overflow樱花动漫是否提供正版内容？</summary>
+            <p>平台坚持正版内容优先，签约与合作作品均具备明确授权，独立投稿作者需在上传时完成原创声明与版权存证，审核通过后才会对外展示。</p>
+          </details>
+          <details>
+            <summary>如何成为平台的入驻创作者？</summary>
+            <p>进入投稿入口填写基本信息与作品样片即可提交，编辑团队会在 5 个工作日内回复。通过初审后可在创作者中心完善主页、上传作品并参与专题企划。</p>
+          </details>
+          <details>
+            <summary>视频支持哪些清晰度与设备？</summary>
+            <p>站内主流视频提供高清与超清档位，部分原创企划提供 4K 片源。页面适配桌面与移动端，播放进度与收藏状态在登录后可跨设备同步。</p>
+          </details>
+          <details>
+            <summary>收藏和点赞会保存在哪里？</summary>
+            <p>收藏与点赞记录保存在账号体系中，未登录时仅保留在当前浏览会话，建议注册账号以获得完整的内容管理与追更体验。</p>
+          </details>
+          <details>
+            <summary>专题企划的更新频率是怎样的？</summary>
+            <p>长期企划通常按周或双周更新，季度性企划会在专题页标注预计完结时间。每期上线后，企业动态与公告条会同步发布更新条目。</p>
+          </details>
+          <details>
+            <summary>如何反馈播放问题或内容建议？</summary>
+            <p>可通过页面底部的联系入口提交问题，或在任意视频条目上使用分享面板旁的反馈按钮。涉及内容合规的问题会被优先处理。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 投稿 CTA ============ -->
+  <section class="ovf-section ovf-section--tight ovf-anchor" id="ovf-submit">
+    <div class="ovf-container">
+      <div class="ovf-cta">
+        <div>
+          <h2>把你的动画，放进下一期专题</h2>
+          <p>overflow樱花动漫持续开放原创投稿与专题合作。无论是一支 30 秒 PV，还是一部十几分钟的短篇，只要故事足够真诚，都值得被更多人看到。</p>
+        </div>
+        <div class="ovf-hero-actions" style="margin:0">
+          <button class="ovf-btn ovf-btn--primary" id="ovfSubmitOpen" type="button">立即投稿</button>
+          <button class="ovf-btn ovf-btn--ghost" id="ovfFeedbackOpen" type="button">反馈建议</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ovf-footer">
+  <div class="ovf-container">
+    <div class="ovf-footer-grid">
+      <div class="ovf-footer-brand">
+        <div class="ovf-brand">
+          <span class="ovf-brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none"><path d="M32 8c10 0 18 8 18 18 0 6-2 10-7 14 4 6 5 12 3 16-6-1-11-5-14-9-3 1-6 1-9 0-3 4-8 8-14 9-2-4-1-10 3-16-5-4-7-8-7-14C5 16 13 8 23 8h9z" fill="#fff" opacity=".92"/><circle cx="25" cy="27" r="3" fill="#ff5c8a"/><circle cx="39" cy="27" r="3" fill="#8f7bff"/></svg>
+          </span>
+          <span class="ovf-brand-name">overflow樱花动漫<span>SAKURA ANIME OFFICIAL</span></span>
+        </div>
+        <p>overflow樱花动漫官方网站 · 专注高清原创动漫视频内容，与创作者一起持续运营值得信赖的内容生态。</p>
+      </div>
+
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#ovf-focus">焦点推荐</a></li>
+          <li><a href="#ovf-videos">热门视频</a></li>
+          <li><a href="#ovf-topics">专题企划</a></li>
+          <li><a href="#ovf-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>关于平台</h4>
+        <ul>
+          <li><a href="#ovf-analysis">品牌解析</a></li>
+          <li><a href="#ovf-news">企业动态</a></li>
+          <li><a href="#ovf-comments">用户口碑</a></li>
+          <li><a href="#ovf-faq">常见问题</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>参与共建</h4>
+        <ul>
+          <li><a href="#ovf-submit">创作者投稿</a></li>
+          <li><a href="#ovf-submit">专题合作</a></li>
+          <li><a href="#ovf-faq">版权与合规</a></li>
+          <li><a href="#ovf-top">回到顶部</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ovf-footer-bottom">
+      <span>© 2026 overflow樱花动漫 官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容分级提示 · 正版授权 · 用户至上 · 匠心制作</span>
+    </div>
+  </div>
+</footer>
+
+<button class="ovf-to-top" id="ovfToTop" type="button" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="ovf-toast" id="ovfToast" role="status" aria-live="polite"></div>
+
+<!-- 投稿弹窗 -->
+<div class="ovf-modal-mask" id="ovfSubmitModal" aria-hidden="true">
+  <div class="ovf-modal" role="dialog" aria-modal="true" aria-labelledby="ovfSubmitTitle">
+    <h3 id="ovfSubmitTitle">创作者投稿入口</h3>
+    <p>填写基本信息后提交，编辑团队将在 5 个工作日内联系你。请确保作品为原创或已获得完整授权。</p>
+    <label for="ovfSubmitName">创作者昵称</label>
+    <input id="ovfSubmitName" type="text" placeholder="例如：樱野工作室">
+    <label for="ovfSubmitType">投稿类型</label>
+    <select id="ovfSubmitType">
+      <option>原创动画短片</option>
+      <option>分镜/幕后纪录</option>
+      <option>测评与科普</option>
+      <option>治愈影像与日常记录</option>
+    </select>
+    <label for="ovfSubmitDesc">作品简介</label>
+    <textarea id="ovfSubmitDesc" placeholder="简单描述作品内容、时长与制作周期"></textarea>
+    <div class="ovf-modal-actions">
+      <button class="ovf-btn ovf-btn--ghost" data-close="ovfSubmitModal" type="button">取消</button>
+      <button class="ovf-btn ovf-btn--primary" id="ovfSubmitSend" type="button">提交投稿</button>
+    </div>
+  </div>
+</div>
+
+<!-- 反馈弹窗 -->
+<div class="ovf-modal-mask" id="ovfFeedbackModal" aria-hidden="true">
+  <div class="ovf-modal" role="dialog" aria-modal="true" aria-labelledby="ovfFeedbackTitle">
+    <h3 id="ovfFeedbackTitle">反馈建议</h3>
+    <p>播放问题、内容建议或版权相关反馈，都欢迎告诉我们。请尽量描述清楚具体情况。</p>
+    <label for="ovfFeedbackDesc">反馈内容</label>
+    <textarea id="ovfFeedbackDesc" placeholder="例如：某条视频在移动端拖动进度条时加载较慢"></textarea>
+    <div class="ovf-modal-actions">
+      <button class="ovf-btn ovf-btn--ghost" data-close="ovfFeedbackModal" type="button">取消</button>
+      <button class="ovf-btn ovf-btn--primary" id="ovfFeedbackSend" type="button">提交反馈</button>
+    </div>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="ovf-modal-mask" id="ovfShareModal" aria-hidden="true">
+  <div class="ovf-modal" role="dialog" aria-modal="true" aria-labelledby="ovfShareTitle">
+    <h3 id="ovfShareTitle">分享这条内容</h3>
+    <p id="ovfShareDesc">把好内容分享给同好，让更多人看见原创动画的力量。</p>
+    <div class="ovf-share-row">
+      <button type="button" data-share="copy">复制链接</button>
+      <button type="button" data-share="wechat">微信</button>
+      <button type="button" data-share="weibo">微博</button>
+      <button type="button" data-share="qq">QQ</button>
+    </div>
+    <div class="ovf-modal-actions" style="margin-top:16px">
+      <button class="ovf-btn ovf-btn--ghost" data-close="ovfShareModal" type="button">关闭</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById('ovfToast');
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-on'); }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('ovfBurger');
+  var drawer = document.getElementById('ovfDrawer');
+  function closeDrawer(){
+    if(!drawer) return;
+    drawer.classList.remove('is-open');
+    if(burger){
+      burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  }
+  if(burger && drawer){
+    burger.addEventListener('click', function(){
+      var open = drawer.classList.toggle('is-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    drawer.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', closeDrawer);
+    });
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('ovfSearchInput');
+  var searchBtn = document.getElementById('ovfSearchBtn');
+  var searchTip = document.getElementById('ovfSearchTip');
+  var videoRows = Array.prototype.slice.call(document.querySelectorAll('.ovf-video-row'));
+
+  function runSearch(){
+    var q = (searchInput && searchInput.value || '').trim();
+    if(!q){
+      if(searchTip){ searchTip.textContent = '请输入关键词'; searchTip.classList.add('is-on'); }
+      videoRows.forEach(function(r){ r.style.display = ''; });
+      return;
+    }
+    var hit = 0;
+    videoRows.forEach(function(row){
+      var text = (row.getAttribute('data-title') || '') + row.textContent;
+      var match = text.indexOf(q) !== -1;
+      row.style.display = match ? '' : 'none';
+      if(match) hit++;
+    });
+    if(searchTip){
+      searchTip.textContent = hit > 0 ? ('命中 ' + hit + ' 条') : '暂无匹配，试试其他词';
+      searchTip.classList.add('is-on');
+    }
+    if(hit > 0){
+      var target = document.getElementById('ovf-videos');
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    } else {
+      toast('没有找到与“' + q + '”相关的内容');
+    }
+  }
+  if(searchBtn) searchBtn.addEventListener('click', runSearch);
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+    });
+    searchInput.addEventListener('input', function(){
+      if(searchTip && !searchInput.value.trim()) searchTip.classList.remove('is-on');
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 切换 ---------- */
+  document.querySelectorAll('.ovf-like').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var numEl = btn.querySelector('.ovf-like-num');
+      var active = btn.classList.toggle('is-liked');
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      if(numEl){
+        var raw = numEl.textContent.replace(/[^\d.]/g, '');
+        var unit = numEl.textContent.indexOf('万') !== -1 ? '万' : '';
+        var val = parseFloat(raw);
+        if(!isNaN(val)){
+          val += active ? 0.1 : -0.1;
+          if(val < 0) val = 0;
+          numEl.textContent = (unit ? (val.toFixed(1) + '万') : Math.round(val).toString());
+        }
+      }
+      toast(active ? '已点赞，感谢支持' : '已取消点赞');
+    });
+  });
+
+  document.querySelectorAll('.ovf-save').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var active = btn.classList.toggle('is-saved');
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      var label = btn.querySelector('span:last-child');
+      if(label) label.textContent = active ? '已收藏' : '收藏';
+      toast(active ? '已加入收藏，可在个人中心查看' : '已取消收藏');
+    });
+  });
+
+  /* ---------- 弹窗通用 ---------- */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(!m) return;
+    m.classList.add('is-on');
+    m.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id){
+    var m = document.getElementById(id);
+    if(!m) return;
+    m.classList.remove('is-on');
+    m.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-close]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      closeModal(btn.getAttribute('data-close'));
+    });
+  });
+  document.querySelectorAll('.ovf-modal-mask').forEach(function(mask){
+    mask.addEventListener('click', function(e){
+      if(e.target === mask) closeModal(mask.id);
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.ovf-modal-mask.is-on').forEach(function(m){ closeModal(m.id); });
+      closeDrawer();
+    }
+  });
+
+  /* ---------- 投稿 / 反馈 ---------- */
+  var submitOpen = document.getElementById('ovfSubmitOpen');
+  var feedbackOpen = document.getElementById('ovfFeedbackOpen');
+  if(submitOpen) submitOpen.addEventListener('click', function(){ openModal('ovfSubmitModal'); });
+  if(feedbackOpen) feedbackOpen.addEventListener('click', function(){ openModal('ovfFeedbackModal'); });
+
+  var submitSend = document.getElementById('ovfSubmitSend');
+  if(submitSend) submitSend.addEventListener('click', function(){
+    var nameEl = document.getElementById('ovfSubmitName');
+    var descEl = document.getElementById('ovfSubmitDesc');
+    if(!nameEl || !nameEl.value.trim()){
+      toast('请填写创作者昵称');
+      nameEl && nameEl.focus();
+      return;
+    }
+    if(!descEl || !descEl.value.trim()){
+      toast('请补充作品简介');
+      descEl && descEl.focus();
+      return;
+    }
+    closeModal('ovfSubmitModal');
+    toast('投稿已提交，5 个工作日内回复');
+    nameEl.value = '';
+    descEl.value = '';
+  });
+
+  var feedbackSend = document.getElementById('ovfFeedbackSend');
+  if(feedbackSend) feedbackSend.addEventListener('click', function(){
+    var descEl = document.getElementById('ovfFeedbackDesc');
+    if(!descEl || !descEl.value.trim()){
+      toast('请填写反馈内容');
+      descEl && descEl.focus();
+      return;
+    }
+    closeModal('ovfFeedbackModal');
+    toast('反馈已收到，感谢你的建议');
+    descEl.value = '';
+  });
+
+  /* ---------- 分享 ---------- */
+  var shareTargetText = '';
+  document.querySelectorAll('.ovf-share').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var row = btn.closest('.ovf-video-row');
+      var titleEl = row ? row.querySelector('h3') : null;
+      shareTargetText = titleEl ? titleEl.textContent : 'overflow樱花动漫精选内容';
+      var desc = document.getElementById('ovfShareDesc');
+      if(desc) desc.textContent = '正在分享：' + shareTargetText;
+      openModal('ovfShareModal');
+    });
+  });
+
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var type = btn.getAttribute('data-share');
+      if(type === 'copy'){
+        var text = shareTargetText + ' — overflow樱花动漫';
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(text).then(function(){
+            toast('链接已复制到剪贴板');
+          }).catch(function(){
+            toast('复制失败，请手动复制标题');
+          });
+        } else {
+          toast('已生成分享文案：' + text);
+        }
+        closeModal('ovfShareModal');
+      } else {
+        var names = {wechat:'微信', weibo:'微博', qq:'QQ'};
+        toast('已生成' + (names[type] || '') + '分享文案，可粘贴发送');
+        closeModal('ovfShareModal');
+      }
+    });
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var toTop = document.getElementById('ovfToTop');
+  function onScroll(){
+    if(!toTop) return;
+    if(window.scrollY > 500) toTop.classList.add('is-on');
+    else toTop.classList.remove('is-on');
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  if(toTop) toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+  onScroll();
+
+  /* ---------- 统计数字入场轻微动效 ---------- */
+  if('IntersectionObserver' in window){
+    var stats = document.querySelectorAll('.ovf-stat b');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.style.transition = 'opacity .6s, transform .6s';
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:.4});
+    stats.forEach(function(el){
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(10px)';
+      io.observe(el);
+    });
+  }
+})();
+</script>
+</body>
+  </html>
